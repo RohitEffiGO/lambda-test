@@ -10,7 +10,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.interactions.Actions;
-import org.springframework.boot.test.context.SpringBootTest;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -20,7 +19,6 @@ import com.scenario.automate.utils.OtherActions;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-@SpringBootTest
 public class WaitAndClickElementTest {
 	private WebDriver driver;
 	private ElementAction elementAction;
