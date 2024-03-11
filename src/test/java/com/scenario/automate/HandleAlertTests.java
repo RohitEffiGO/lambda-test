@@ -18,7 +18,6 @@ import org.testng.annotations.Test;
 import com.scenario.automate.utils.ElementAction;
 import com.scenario.automate.utils.HandleAlertsPopUpsDailogue;
 
-@SpringBootTest
 public class HandleAlertTests {
 	public static RemoteWebDriver driver = null;
 
