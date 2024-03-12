@@ -14,7 +14,7 @@ import io.restassured.response.Response;
 
 public class RestApiTest{
 	private static String URL;
-	private static String FILE_PATH = "src\\main\\resources\\application.properties";
+	private static String FILE_PATH = "src/main/resources/application.properties";
 	@BeforeTest
 	public void loadUp() {
 		System.out.println(System.getProperty("user.dir"));
