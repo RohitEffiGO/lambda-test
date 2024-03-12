@@ -3,18 +3,12 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
   <test thread-count="5" name="Test(failed)" verbose="0">
     <classes>
-      <class name="com.scenario.automate.WaitAndClickElementTest">
+      <class name="com.scenario.automate.RestApiTest">
         <methods>
-          <include name="testRadioButton"/>
-          <include name="dropDownSelector"/>
-          <include name="loadWebDriver"/>
-          <include name="closeDriver"/>
-          <include name="testClickOnElement"/>
-          <include name="testDataInTextField"/>
-          <include name="testFindElement"/>
-          <include name="testGetWebElement"/>
+          <include name="restApiTestTwo"/>
+          <include name="loadUp"/>
         </methods>
-      </class> <!-- com.scenario.automate.WaitAndClickElementTest -->
+      </class> <!-- com.scenario.automate.RestApiTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

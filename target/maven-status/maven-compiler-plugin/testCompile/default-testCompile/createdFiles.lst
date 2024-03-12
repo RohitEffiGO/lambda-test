@@ -1,4 +1,5 @@
 com\scenario\automate\utils\ElementAction.class
+com\scenario\automate\RestApiTest.class
 com\scenario\automate\HandleAlertTests.class
 com\scenario\automate\utils\ConvertToMap.class
 com\scenario\automate\TestHoverMouse.class

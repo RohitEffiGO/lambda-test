@@ -136,6 +136,7 @@ public class HandleAlertTests {
 		assertEquals(true, handler.dialogBoxHandler(closeElement));
 	}
 
+	
 	@AfterTest
 	public void closeAll() {
 		driver.close();

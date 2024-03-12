@@ -1,4 +1,4 @@
-# Created at 2024-03-11T18:00:57.358
+# Created at 2024-03-12T10:48:51.112
 Boot Manifest-JAR contains absolute paths in classpath 'D:\lambda-test\target\test-classes'
 Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
 'other' has different root
