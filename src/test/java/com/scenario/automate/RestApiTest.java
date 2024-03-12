@@ -17,6 +17,7 @@ public class RestApiTest{
 	private static String FILE_PATH = "src\\main\\resources\\application.properties";
 	@BeforeTest
 	public void loadUp() {
+		System.out.println(System.getProperty("user.dir"));
 		Properties properties = new Properties();
         try (FileInputStream input = new FileInputStream(FILE_PATH)) {
             properties.load(input);
