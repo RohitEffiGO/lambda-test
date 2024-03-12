@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-12T11:10:04 IST" name="Suite" finished-at="2024-03-12T11:10:07 IST" duration-ms="2848">
+  <suite started-at="2024-03-12T11:19:03 IST" name="Suite" finished-at="2024-03-12T11:19:05 IST" duration-ms="2652">
     <groups>
     </groups>
-    <test started-at="2024-03-12T11:10:04 IST" name="Test" finished-at="2024-03-12T11:10:07 IST" duration-ms="2848">
+    <test started-at="2024-03-12T11:19:03 IST" name="Test" finished-at="2024-03-12T11:19:05 IST" duration-ms="2652">
       <class name="com.scenario.automate.RestApiTest">
-        <test-method is-config="true" signature="loadUp()[pri:0, instance:com.scenario.automate.RestApiTest@619713e5]" started-at="2024-03-12T11:10:04 IST" name="loadUp" finished-at="2024-03-12T11:10:04 IST" duration-ms="15" status="PASS">
+        <test-method is-config="true" signature="loadUp()[pri:0, instance:com.scenario.automate.RestApiTest@619713e5]" started-at="2024-03-12T11:19:03 IST" name="loadUp" finished-at="2024-03-12T11:19:03 IST" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadUp -->
-        <test-method signature="restApiTestOne()[pri:1, instance:com.scenario.automate.RestApiTest@619713e5]" started-at="2024-03-12T11:10:04 IST" name="restApiTestOne" finished-at="2024-03-12T11:10:06 IST" duration-ms="1999" status="PASS">
+        <test-method signature="restApiTestOne()[pri:1, instance:com.scenario.automate.RestApiTest@619713e5]" started-at="2024-03-12T11:19:03 IST" name="restApiTestOne" finished-at="2024-03-12T11:19:04 IST" duration-ms="1804" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- restApiTestOne -->
-        <test-method signature="restApiTestTwo()[pri:2, instance:com.scenario.automate.RestApiTest@619713e5]" started-at="2024-03-12T11:10:06 IST" name="restApiTestTwo" finished-at="2024-03-12T11:10:07 IST" duration-ms="796" status="PASS">
+        <test-method signature="restApiTestTwo()[pri:2, instance:com.scenario.automate.RestApiTest@619713e5]" started-at="2024-03-12T11:19:04 IST" name="restApiTestTwo" finished-at="2024-03-12T11:19:05 IST" duration-ms="791" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- restApiTestTwo -->
