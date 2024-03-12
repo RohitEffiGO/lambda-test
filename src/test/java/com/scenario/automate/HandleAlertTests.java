@@ -2,9 +2,12 @@ package com.scenario.automate;
 
 import static org.testng.Assert.assertEquals;
 
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.HashMap;
+import java.util.Properties;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -17,22 +20,32 @@ import org.testng.annotations.Test;
 import com.scenario.automate.utils.ElementAction;
 import com.scenario.automate.utils.HandleAlertsPopUpsDailogue;
 
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
+
 public class HandleAlertTests {
 	public static RemoteWebDriver driver = null;
-
+	private static String URL;
+	private static String FILE_PATH = "src/main/resources/application.properties";
+	
 	public String username = "rohit.thakureffigo";
 	public String accesskey = "YmXkfqbnNZQOpoO39JUdY3rECfRIVBNTHZSLaO1VQIW5eSKP6K";
 	public String gridURL = "@hub.lambdatest.com/wd/hub";
-
+	
 	ChromeOptions browserOptions;
 	HandleAlertsPopUpsDailogue handler;
 	ElementAction elementAction;
 
 	@BeforeTest
 	public void loadEverything() {
-		System.setProperty("webdriver.chrome.driver",
-				"D:\\Login\\work\\demo\\src\\main\\resources\\chromedriver-win64\\chromedriver.exe");
+		Properties properties = new Properties();
+        try (FileInputStream input = new FileInputStream(FILE_PATH)) {
+            properties.load(input);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
+        URL = properties.getProperty("url");
 		this.browserOptions = new ChromeOptions();
 		browserOptions.setPlatformName("Windows 10");
 		browserOptions.setBrowserVersion("122.0");
@@ -112,33 +125,15 @@ public class HandleAlertTests {
 	}
 
 	@Test
-	public void testModalOpenAndClose() {
-		driver.manage().window().maximize();
-		driver.get("https://www.lambdatest.com/selenium-playground/bootstrap-modal-demo");
-
-		WebElement triggerElement = elementAction.getTheElement(driver,
-				By.xpath("/html/body/div[1]/section[2]/div/div/div/div[1]/button"));
-
-		assertEquals(true, elementAction.clickOnElement(triggerElement));
-
-		WebElement interactElement = elementAction.getTheElement(driver,
-				By.xpath("/html/body/div[1]/section[2]/div/div/div/div[1]/div[2]/div/div/div[3]/button[2]"));
-
-		handler.waitForElement(driver, interactElement);
-		assertEquals(true, handler.dialogBoxHandler(interactElement));
-
-		elementAction.clickOnElement(triggerElement);
-
-		WebElement closeElement = elementAction.getTheElement(driver,
-				By.xpath("/html/body/div[1]/section[2]/div/div/div/div[1]/div[2]/div/div/div[1]/button"));
-
-		handler.waitForElement(driver, closeElement);
-		assertEquals(true, handler.dialogBoxHandler(closeElement));
+	public void restApiTestTwo() {
+		String endpoint = "/users?page=2";
+        Response response = RestAssured.get(URL + endpoint);
+		int perPageValue = response.jsonPath().getInt("per_page");
+		assertEquals(perPageValue, 6);
 	}
-
 	
 	@AfterTest
 	public void closeAll() {
-		driver.close();
+		driver.quit();
 	}
 }
