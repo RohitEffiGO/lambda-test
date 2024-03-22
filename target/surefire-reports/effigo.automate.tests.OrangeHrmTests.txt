@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: effigo.automate.tests.OrangeHrmTests
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 81.609 s <<< FAILURE! - in effigo.automate.tests.OrangeHrmTests
+test(effigo.automate.tests.OrangeHrmTests)  Time elapsed: 67.872 s  <<< FAILURE!
+java.lang.IllegalArgumentException: Locator must be set
+	at effigo.automate.tests.OrangeHrmTests.test(OrangeHrmTests.java:15)
+
+destroy(effigo.automate.tests.OrangeHrmTests)  Time elapsed: 68.894 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+Unable to find the session info for particular sessionId 966517ca-f70b-4796-9571-c171ef91b0ff, maybe session has quit already or timed out.
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [966517ca-f70b-4796-9571-c171ef91b0ff, close {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 122.0, moz:accessibilityChecks: false, moz:buildID: 20231218153201, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 1704, moz:profile: C:\Users\ltuser\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 966517ca-f70b-4796-9571-c17...}
+Session ID: 966517ca-f70b-4796-9571-c171ef91b0ff
+

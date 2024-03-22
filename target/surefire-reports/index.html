@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -60,7 +60,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Surefire_suite" class="navigator-link ">
-                    <span>1 group</span>
+                    <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 3 failed,   1 passed</span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,34 +103,10 @@
                     <div class="method-list-content failed suite-Surefire_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="effigo.automate.tests.BasicTests" class="method navigator-link" hash-for-method="testAllFields">testAllFields</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="effigo.automate.tests.FilterTest" class="method navigator-link" hash-for-method="testFilter">testFilter</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="effigo.automate.tests.ValidateResultsTest" class="method navigator-link" hash-for-method="validateFilterTest">validateFilterTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="effigo.automate.tests.OrangeHrmTests" class="method navigator-link" hash-for-method="test">test</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Surefire_suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods passed suite-Surefire_suite"> (hide)</a> <!-- hide-methods passed suite-Surefire_suite -->
-                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods passed suite-Surefire_suite"> (show)</a> <!-- show-methods passed suite-Surefire_suite -->
-                    </span>
-                    <div class="method-list-content passed suite-Surefire_suite">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="effigo.automate.tests.CurlWithLambdaTest" class="method navigator-link" hash-for-method="testBasicApiCall">testBasicApiCall</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Surefire_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -145,81 +121,30 @@
           <div class="suite-Surefire_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">effigo.automate.tests.FilterTest</span>
+              <span class="class-name">effigo.automate.tests.OrangeHrmTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testFilter">
-                  </a> <!-- testFilter -->
-                  <span class="method-name">testFilter</span>
-                  <div class="stack-trace">org.testng.TestNGException: 
-Parameter &apos;browser&apos; is required by @Test on method testFilter but has not been marked @Optional or defined
-
+                  <a name="test">
+                  </a> <!-- test -->
+                  <span class="method-name">test</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Locator must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at effigo.automate.common.utils.ElementAction.getTheElement(ElementAction.java:23)
+	at effigo.automate.PageObjectModel.OrangeHrmOperations.editUser(OrangeHrmOperations.java:222)
+	at effigo.automate.tests.OrangeHrmTests.test(OrangeHrmTests.java:15)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames
+... Removed 32 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Surefire_suite-class-failed -->
-          <div class="suite-Surefire_suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">effigo.automate.tests.BasicTests</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testAllFields">
-                  </a> <!-- testAllFields -->
-                  <span class="method-name">testAllFields</span>
-                  <div class="stack-trace">org.testng.TestNGException: 
-Parameter &apos;browser&apos; is required by @Test on method testAllFields but has not been marked @Optional or defined
-
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-failed -->
-          <div class="suite-Surefire_suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">effigo.automate.tests.ValidateResultsTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="validateFilterTest">
-                  </a> <!-- validateFilterTest -->
-                  <span class="method-name">validateFilterTest</span>
-                  <div class="stack-trace">org.testng.TestNGException: 
-Parameter &apos;browser&apos; is required by @Test on method validateFilterTest but has not been marked @Optional or defined
-
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-failed -->
-          <div class="suite-Surefire_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">effigo.automate.tests.CurlWithLambdaTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testBasicApiCall">
-                  </a> <!-- testBasicApiCall -->
-                  <span class="method-name">testBasicApiCall</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-passed -->
         </div> <!-- panel Surefire_suite -->
         <div panel-name="test-xml-Surefire_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -231,10 +156,7 @@ Parameter &apos;browser&apos; is required by @Test on method validateFilterTest 
 &lt;suite thread-count=&quot;1&quot; name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
   &lt;test thread-count=&quot;1&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;effigo.automate.tests.BasicTests&quot;/&gt;
-      &lt;class name=&quot;effigo.automate.tests.CurlWithLambdaTest&quot;/&gt;
-      &lt;class name=&quot;effigo.automate.tests.FilterTest&quot;/&gt;
-      &lt;class name=&quot;effigo.automate.tests.ValidateResultsTest&quot;/&gt;
+      &lt;class name=&quot;effigo.automate.tests.OrangeHrmTests&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Surefire test --&gt;
 &lt;/suite&gt; &lt;!-- Surefire suite --&gt;
@@ -248,7 +170,7 @@ Parameter &apos;browser&apos; is required by @Test on method validateFilterTest 
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Surefire test (4 classes)</span>
+                <span class="test-name">Surefire test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -258,14 +180,6 @@ Parameter &apos;browser&apos; is required by @Test on method validateFilterTest 
             <span class="header-content">Groups for Surefire suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="test-group">
-              <span class="test-group-name">group1</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">validateFilterTest</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Surefire_suite" class="panel">
@@ -282,28 +196,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testBasicApiCall')
-data.setCell(0, 2, 'effigo.automate.tests.CurlWithLambdaTest')
-data.setCell(0, 3, 1070);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testFilter')
-data.setCell(1, 2, 'effigo.automate.tests.FilterTest')
-data.setCell(1, 3, 0);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testAllFields')
-data.setCell(2, 2, 'effigo.automate.tests.BasicTests')
-data.setCell(2, 3, 0);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'validateFilterTest')
-data.setCell(3, 2, 'effigo.automate.tests.ValidateResultsTest')
-data.setCell(3, 3, 0);
+data.setCell(0, 1, 'test')
+data.setCell(0, 2, 'effigo.automate.tests.OrangeHrmTests')
+data.setCell(0, 3, 67846);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -329,53 +231,27 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">effigo.automate.tests.ValidateResultsTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">effigo.automate.tests.OrangeHrmTests</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
-                <span class="method-name">justRun</span>
+                <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">effigo.automate.tests.BasicTests</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">load</span>
-                <span class="method-start">20 ms</span>
-              </div> <!-- configuration-test before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">effigo.automate.tests.CurlWithLambdaTest</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">setup</span>
-                <span class="method-start">23 ms</span>
-              </div> <!-- configuration-test before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">effigo.automate.tests.FilterTest</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">loadUp</span>
-                <span class="method-start">25 ms</span>
-              </div> <!-- configuration-test before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">effigo.automate.tests.ValidateResultsTest</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">setup</span>
-                <span class="method-start">3196 ms</span>
-              </div> <!-- configuration-test before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">effigo.automate.tests.CurlWithLambdaTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">testBasicApiCall</span>
-                <span class="method-start">3243 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test</span>
+                <span class="method-start">12061 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">effigo.automate.tests.FilterTest</div> <!-- chronological-class-name -->
-              <div class="configuration-test after">
+              <div class="configuration-class after">
                 <span class="method-name">destroy</span>
-                <span class="method-start">4318 ms</span>
-              </div> <!-- configuration-test after -->
+                <span class="method-start">79928 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-suite after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">destroy</span>
+                <span class="method-start">80909 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

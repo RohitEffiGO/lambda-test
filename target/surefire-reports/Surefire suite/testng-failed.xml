@@ -3,26 +3,13 @@
 <suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
   <test thread-count="1" name="Surefire test(failed)" verbose="0">
     <classes>
-      <class name="effigo.automate.tests.FilterTest">
+      <class name="effigo.automate.tests.OrangeHrmTests">
         <methods>
-          <include name="testFilter"/>
-          <include name="loadUp"/>
-          <include name="destroy"/>
-        </methods>
-      </class> <!-- effigo.automate.tests.FilterTest -->
-      <class name="effigo.automate.tests.BasicTests">
-        <methods>
-          <include name="testAllFields"/>
-          <include name="load"/>
-        </methods>
-      </class> <!-- effigo.automate.tests.BasicTests -->
-      <class name="effigo.automate.tests.ValidateResultsTest">
-        <methods>
-          <include name="justRun"/>
-          <include name="validateFilterTest"/>
           <include name="setup"/>
+          <include name="destroy"/>
+          <include name="test"/>
         </methods>
-      </class> <!-- effigo.automate.tests.ValidateResultsTest -->
+      </class> <!-- effigo.automate.tests.OrangeHrmTests -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->
