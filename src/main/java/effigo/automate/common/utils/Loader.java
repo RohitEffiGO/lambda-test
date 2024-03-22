@@ -27,7 +27,7 @@ public class Loader {
 	public static String runnerPath = System.getProperty("user.dir");
 	public static Map<String, String> allArgsMap = new HashMap<>();
 	public static Map<String, Map<String, String>> cachedData = new HashMap<>();
-	public static final String CONFIGPATHSTRING = runnerPath + "\\src\\test\\resources\\config.properties";
+	public static final String CONFIGPATHSTRING = runnerPath + "/src/test/resources/config.properties";
 	public static String loginUsername;
 	public static String loginPassword;
 	Properties properties = new Properties();
