@@ -1,0 +1,14 @@
+effigo\automate\PageObjectModel\ForAllFilters.class
+effigo\automate\common\utils\HandleAlertsPopUpsDailogue.class
+effigo\automate\PageObjectModel\GetAllElements.class
+effigo\automate\common\utils\CurlCommandBuilder.class
+effigo\automate\PageObjectModel\DataValidation.class
+effigo\automate\common\utils\ConvertToMap.class
+effigo\automate\common\utils\SerializeToList.class
+effigo\automate\common\utils\OtherActions.class
+effigo\automate\common\utils\RunFailedOnly.class
+effigo\automate\common\utils\CheckForFields.class
+effigo\automate\common\utils\FileOperations.class
+effigo\automate\common\utils\LoadDriver.class
+effigo\automate\common\utils\ElementAction.class
+effigo\automate\PageObjectModel\LoadBrowserBasic.class

@@ -1,10 +1,4 @@
-com\scenario\automate\utils\ElementAction.class
-com\scenario\automate\RestApiTest.class
-com\scenario\automate\HandleAlertTests.class
-com\scenario\automate\utils\ConvertToMap.class
-com\scenario\automate\TestHoverMouse.class
-com\scenario\automate\utils\FileOperations.class
-com\scenario\automate\utils\HandleAlertsPopUpsDailogue.class
-com\scenario\automate\utils\OtherActions.class
-com\scenario\automate\utils\RunFailedOnly.class
-com\scenario\automate\WaitAndClickElementTest.class
+effigo\automate\tests\BasicTests.class
+effigo\automate\tests\CurlWithLambdaTest.class
+effigo\automate\tests\ValidateResultsTest.class
+effigo\automate\tests\FilterTest.class

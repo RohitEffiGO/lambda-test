@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="go-for-filter">
+	<test name="check-data1">
+		<classes>
+			<class name="effigo.automate.tests.ValidateResultsTest" />
+		</classes>
+	</test>
+</suite>

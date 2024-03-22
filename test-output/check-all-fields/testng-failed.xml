@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [check-all-fields]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="check-all-fields-test(failed)">
+    <parameter name="browser" value="firefox"/>
+    <parameter name="allElementList" value="/html/body/div/div/div[2]/div/div/div[2]/div/table/thead/tr[1]/th[1]; /html/body/div/div/div[2]/div/div/div[2]/div/table/thead/tr[1]/th[2]; /html/body/div/div/div[2]/div/div/div[2]/div/table/thead/tr[1]/th[3];/html/body/div/div/div[2]/div/div/div[2]/div/table/thead/tr[1]/th[4]; /html/body/div/div/div[2]/div/div/div[2]/div/table/thead/tr[1]/th[5]; /html/body/div/div/div[2]/div/div/div[2]/div/table/thead/tr[1]/th[6]"/>
+    <parameter name="url" value="http://localhost:5173/demo/"/>
+    <classes>
+      <class name="effigo.automate.tests.BasicTests">
+        <methods>
+          <include name="testAllFields" invocation-numbers="0"/>
+          <include name="load"/>
+        </methods>
+      </class> <!-- effigo.automate.tests.BasicTests -->
+    </classes>
+  </test> <!-- check-all-fields-test(failed) -->
+</suite> <!-- Failed suite [check-all-fields] -->

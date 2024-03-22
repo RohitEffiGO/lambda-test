@@ -1,56 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="6" failed="1" skipped="0">
+<testng-results ignored="0" total="4" passed="1" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-12T11:38:10 IST" name="Suite" finished-at="2024-03-12T11:38:58 IST" duration-ms="48504">
+  <suite started-at="2024-03-07T10:45:21 IST" name="Surefire suite" finished-at="2024-03-07T10:45:26 IST" duration-ms="5206">
     <groups>
+      <group name="group1">
+        <method signature="ValidateResultsTest.validateFilterTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:effigo.automate.tests.ValidateResultsTest@18ce0030]" name="validateFilterTest" class="effigo.automate.tests.ValidateResultsTest"/>
+      </group> <!-- group1 -->
     </groups>
-    <test started-at="2024-03-12T11:38:10 IST" name="Test" finished-at="2024-03-12T11:38:58 IST" duration-ms="48504">
-      <class name="com.scenario.automate.HandleAlertTests">
-        <test-method is-config="true" signature="loadEverything()[pri:0, instance:com.scenario.automate.HandleAlertTests@3835c46]" started-at="2024-03-12T11:38:10 IST" name="loadEverything" finished-at="2024-03-12T11:38:22 IST" duration-ms="12603" status="PASS">
+    <test started-at="2024-03-07T10:45:21 IST" name="Surefire test" finished-at="2024-03-07T10:45:26 IST" duration-ms="5206">
+      <class name="effigo.automate.tests.BasicTests">
+        <test-method is-config="true" signature="load()[pri:0, instance:effigo.automate.tests.BasicTests@45018215]" started-at="2024-03-07T10:45:21 IST" name="load" finished-at="2024-03-07T10:45:21 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loadEverything -->
-        <test-method signature="cancelAlertTest()[pri:0, instance:com.scenario.automate.HandleAlertTests@3835c46]" started-at="2024-03-12T11:38:22 IST" name="cancelAlertTest" finished-at="2024-03-12T11:38:33 IST" duration-ms="10450" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cancelAlertTest -->
-        <test-method signature="handleAlertTest()[pri:0, instance:com.scenario.automate.HandleAlertTests@3835c46]" started-at="2024-03-12T11:38:33 IST" name="handleAlertTest" finished-at="2024-03-12T11:38:37 IST" duration-ms="4330" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- handleAlertTest -->
-        <test-method signature="restApiTestTwo()[pri:0, instance:com.scenario.automate.HandleAlertTests@3835c46]" started-at="2024-03-12T11:38:37 IST" name="restApiTestTwo" finished-at="2024-03-12T11:38:39 IST" duration-ms="2309" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- restApiTestTwo -->
-        <test-method signature="sendAlertMessageTest()[pri:0, instance:com.scenario.automate.HandleAlertTests@3835c46]" started-at="2024-03-12T11:38:39 IST" name="sendAlertMessageTest" finished-at="2024-03-12T11:38:51 IST" duration-ms="12064" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- sendAlertMessageTest -->
-        <test-method signature="testClosePopUp()[pri:0, instance:com.scenario.automate.HandleAlertTests@3835c46]" started-at="2024-03-12T11:38:51 IST" name="testClosePopUp" finished-at="2024-03-12T11:38:57 IST" duration-ms="5928" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        </test-method> <!-- load -->
+        <test-method signature="testAllFields(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:effigo.automate.tests.BasicTests@45018215]" started-at="2024-03-07T10:45:24 IST" name="testAllFields" finished-at="2024-03-07T10:45:24 IST" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
             <message>
-              <![CDATA[expected [false] but found [true]]]>
+              <![CDATA[
+Parameter 'browser' is required by @Test on method testAllFields but has not been marked @Optional or defined
+]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:1067)
-at org.testng.Assert.assertEquals(Assert.java:1031)
-at org.testng.Assert.assertEquals(Assert.java:1077)
-at com.scenario.automate.HandleAlertTests.testClosePopUp(HandleAlertTests.java:124)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by @Test on method testAllFields but has not been marked @Optional or defined
+
+at org.testng.internal.Parameters.createParams(Parameters.java:267)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+at org.testng.internal.Parameters.createParameters(Parameters.java:693)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:888)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:737)
+at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:915)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -67,38 +49,149 @@ at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
 at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
 at org.testng.TestNG.runSuites(TestNG.java:1134)
 at org.testng.TestNG.run(TestNG.java:1101)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testClosePopUp -->
-        <test-method is-config="true" signature="closeAll()[pri:0, instance:com.scenario.automate.HandleAlertTests@3835c46]" started-at="2024-03-12T11:38:58 IST" name="closeAll" finished-at="2024-03-12T11:38:58 IST" duration-ms="438" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeAll -->
-      </class> <!-- com.scenario.automate.HandleAlertTests -->
-      <class name="com.scenario.automate.RestApiTest">
-        <test-method is-config="true" signature="loadUp()[pri:0, instance:com.scenario.automate.RestApiTest@192d43ce]" started-at="2024-03-12T11:38:22 IST" name="loadUp" finished-at="2024-03-12T11:38:22 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- testAllFields -->
+      </class> <!-- effigo.automate.tests.BasicTests -->
+      <class name="effigo.automate.tests.FilterTest">
+        <test-method is-config="true" signature="loadUp()[pri:0, instance:effigo.automate.tests.FilterTest@147ed70f]" started-at="2024-03-07T10:45:21 IST" name="loadUp" finished-at="2024-03-07T10:45:24 IST" duration-ms="3170" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadUp -->
-        <test-method signature="restApiTestOne()[pri:1, instance:com.scenario.automate.RestApiTest@192d43ce]" started-at="2024-03-12T11:38:57 IST" name="restApiTestOne" finished-at="2024-03-12T11:38:58 IST" duration-ms="174" status="PASS">
+        <test-method signature="testFilter(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:effigo.automate.tests.FilterTest@147ed70f]" started-at="2024-03-07T10:45:25 IST" name="testFilter" finished-at="2024-03-07T10:45:25 IST" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by @Test on method testFilter but has not been marked @Optional or defined
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by @Test on method testFilter but has not been marked @Optional or defined
+
+at org.testng.internal.Parameters.createParams(Parameters.java:267)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+at org.testng.internal.Parameters.createParameters(Parameters.java:693)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:888)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:737)
+at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:915)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- restApiTestOne -->
-        <test-method signature="restApiTestTwo()[pri:2, instance:com.scenario.automate.RestApiTest@192d43ce]" started-at="2024-03-12T11:38:58 IST" name="restApiTestTwo" finished-at="2024-03-12T11:38:58 IST" duration-ms="160" status="PASS">
+        </test-method> <!-- testFilter -->
+        <test-method is-config="true" signature="destroy()[pri:0, instance:effigo.automate.tests.FilterTest@147ed70f]" started-at="2024-03-07T10:45:25 IST" name="destroy" finished-at="2024-03-07T10:45:26 IST" duration-ms="903" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- restApiTestTwo -->
-      </class> <!-- com.scenario.automate.RestApiTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- destroy -->
+      </class> <!-- effigo.automate.tests.FilterTest -->
+      <class name="effigo.automate.tests.CurlWithLambdaTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:effigo.automate.tests.CurlWithLambdaTest@4278a03f]" started-at="2024-03-07T10:45:21 IST" name="setup" finished-at="2024-03-07T10:45:21 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testBasicApiCall()[pri:0, instance:effigo.automate.tests.CurlWithLambdaTest@4278a03f]" started-at="2024-03-07T10:45:24 IST" name="testBasicApiCall" finished-at="2024-03-07T10:45:25 IST" duration-ms="1070" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBasicApiCall -->
+      </class> <!-- effigo.automate.tests.CurlWithLambdaTest -->
+      <class name="effigo.automate.tests.ValidateResultsTest">
+        <test-method is-config="true" signature="justRun()[pri:0, instance:effigo.automate.tests.ValidateResultsTest@18ce0030]" started-at="2024-03-07T10:45:21 IST" name="justRun" finished-at="2024-03-07T10:45:21 IST" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- justRun -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:effigo.automate.tests.ValidateResultsTest@18ce0030]" started-at="2024-03-07T10:45:24 IST" name="setup" finished-at="2024-03-07T10:45:24 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="validateFilterTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:effigo.automate.tests.ValidateResultsTest@18ce0030]" started-at="2024-03-07T10:45:25 IST" name="validateFilterTest" finished-at="2024-03-07T10:45:25 IST" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by @Test on method validateFilterTest but has not been marked @Optional or defined
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by @Test on method validateFilterTest but has not been marked @Optional or defined
+
+at org.testng.internal.Parameters.createParams(Parameters.java:267)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+at org.testng.internal.Parameters.createParameters(Parameters.java:693)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:888)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:737)
+at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:915)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateFilterTest -->
+      </class> <!-- effigo.automate.tests.ValidateResultsTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
 </testng-results>

@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="check-all-fields">
+	<test name="check-all-fields-test">
+		<classes>
+			<class name="effigo.automate.tests.BasicTests"/>
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="test-table">
+	<test name="test-table-1">
+		<classes>
+			<class name="effigo.automate.tests.ValidateTableTest"/>
+		</classes>
+	</test>
+</suite>
