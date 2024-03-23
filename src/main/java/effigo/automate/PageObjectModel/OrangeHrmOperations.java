@@ -8,6 +8,7 @@ import java.util.Map;
 import java.util.Random;
 import java.util.stream.Collectors;
 
+import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -142,6 +143,7 @@ public class OrangeHrmOperations extends Loader {
 			String password = allArgsMap.get("add.password.value");
 
 //			employee name
+			String message = "Invalid";
 			By empBy = checkForFields.categorizeElementAndRetrieve(driver, employeeNamePath);
 			WebElement empElement = elementAction.getTheElement(driver, empBy);
 
@@ -150,6 +152,29 @@ public class OrangeHrmOperations extends Loader {
 			empElement.sendKeys(Keys.DOWN);
 			empElement.sendKeys(Keys.ENTER);
 			Thread.sleep(1000);
+
+			while (message.equalsIgnoreCase("invalid")) {
+				try {
+					By invalidBy = checkForFields.categorizeElementAndRetrieve(driver, "//span[text()='Invalid']");
+					WebElement invalidElement = elementAction.getTheElement(driver, invalidBy);
+
+					if (!invalidElement.getText().equalsIgnoreCase("Invalid")) {
+						message = "";
+					}
+
+				} catch (Exception e) {
+					break;
+				}
+				empBy = checkForFields.categorizeElementAndRetrieve(driver, employeeNamePath);
+				empElement = elementAction.getTheElement(driver, empBy);
+
+				otherActions.writeInTextBox(empElement, RandomStringUtils.randomAlphabetic(1));
+				Thread.sleep(2000);
+				empElement.sendKeys(Keys.DOWN);
+				empElement.sendKeys(Keys.ENTER);
+				Thread.sleep(1000);
+
+			}
 
 //			username
 			By userBy = checkForFields.categorizeElementAndRetrieve(driver, usernamePath);
@@ -213,7 +238,7 @@ public class OrangeHrmOperations extends Loader {
 
 	public boolean editUser() throws InterruptedException {
 
-		Thread.sleep(2000);
+		Thread.sleep(10000);
 
 		String editBtn = allArgsMap.get("edit.click.button");
 		editBtn = editBtn.replace("dynamic", "'" + usernameString + "'");

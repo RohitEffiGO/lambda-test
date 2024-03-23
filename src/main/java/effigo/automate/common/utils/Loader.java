@@ -62,6 +62,7 @@ public class Loader {
 		try {
 			driver = new RemoteWebDriver(new URL("https://" + username + ":" + accesskey + gridURL),
 					RemoteBrowserOptions.returnRemoteBrowserOptions(browser, loginUsername, loginPassword));
+//			driver = new LoadDriver().loadWebDriver(browser)
 		} catch (MalformedURLException e) {
 			System.out.println("Invalid grid URL");
 		} catch (Exception e) {
@@ -105,7 +106,7 @@ public class Loader {
 		} catch (NullPointerException e) {
 			System.out.println("No csv provided.");
 		} catch (Exception e) {
-			e.printStackTrace();
+
 		}
 
 		try (BufferedReader reader = Files.newBufferedReader(Paths.get(csvPath))) {
@@ -146,7 +147,11 @@ public class Loader {
 		}
 
 		if (allArgsMap.containsKey("driver.close") && allArgsMap.get("driver.close").equalsIgnoreCase("true")) {
-			driver.close();
+			try {
+				driver.close();
+			} catch (Exception e) {
+
+			}
 		}
 	}
 }
